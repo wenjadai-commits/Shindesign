@@ -122,7 +122,8 @@
       background: linear-gradient(135deg, #f07830 0%, #d86022 60%, #bf4a10 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-clip: text;
+      background-clip: text;'
+      height: 200px;
     }
     .hero-zh {
       font-size:clamp(13px,2vw,17px); font-weight:300;
@@ -429,7 +430,7 @@
     <p class="hero-eyebrow">Shin Design Studio · 隨心啟動 啟動無限</p>
     <h1 class="hero-title">Shin<em>Design</em></h1>
     <p class="hero-zh">心　設　計</p>
-    <p class="hero-sub">Graphic Design · Digital · Brand Visual · Print &ensp;·&ensp; Est. 2018</p>
+    <p class="hero-sub">Graphic Design · Digital · Brand Visual · Print &ensp;·&ensp; Est. 2025</p>
   </div>
   <div class="hero-scroll">
     <span class="hero-scroll-label">Scroll</span>
@@ -441,7 +442,7 @@
 <section class="section" id="works">
   <div class="section-header">
     <div>
-      <p class="section-eyebrow">Portfolio — 2018 to Present</p>
+      <p class="section-eyebrow">Portfolio — 2025 to Present</p>
       <h2 class="section-title">Selected <em>Works</em></h2>
     </div>
     <span class="section-count" id="count">30 Projects</span>
@@ -454,20 +455,21 @@
     <button class="filter-btn" data-filter="celebration">慶典 · 祝賀</button>
     <button class="filter-btn" data-filter="brand">品牌 · 包裝</button>
     <button class="filter-btn" data-filter="publication">出版 · 排版</button>
+    <button class="filter-btn" data-filter="video">數位· 影片</button>
   </div>
 
   <div class="project-grid" id="grid">
 
     <!-- ── 數位 · 網頁 ── -->
 
-    <!--<div class="project-card" data-category="digital" data-title="YSL Y Le Parfum 產品頁">
+    <div class="project-card" data-category="digital" data-title="YSL Y Le Parfum 產品頁">
       <img class="project-card-img" src="img/ysl_leparfum_pc.jpg" alt="YSL Y Le Parfum 產品頁" loading="lazy">
       <div class="project-card-placeholder">YSL Y Le Parfum 產品頁</div>
       <div class="project-card-overlay">
         <div class="project-card-cat">數位 · 網頁</div>
         <div class="project-card-name">YSL Y Le Parfum 產品頁</div>
       </div>
-    </div>-->
+    </div>
 
     <div class="project-card" data-category="digital" data-title="YSL LIBRE 產品頁">
       <img class="project-card-img" src="img/ysl_libre_pc.jpg" alt="YSL LIBRE 產品頁" loading="lazy">
@@ -554,6 +556,26 @@
       </div>
     </div>
 
+
+    <div class="project-card" data-category="promotion" data-title="慾望當舖酷卡">
+      <img class="project-card-img" src="img/慾望當舖酷卡.jpg" alt="慾望當舖酷卡" loading="lazy">
+      <div class="project-card-placeholder">慾望當舖酷卡</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">活動 · 宣傳</div>
+        <div class="project-card-name">慾望當舖酷卡</div>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="promotion" data-title="2018 聖誕節海報">
+      <img class="project-card-img" src="img/2018聖誕節海報.jpg" alt="2018 聖誕節海報" loading="lazy">
+      <div class="project-card-placeholder">2018 聖誕節海報</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">活動 · 宣傳</div>
+        <div class="project-card-name">2018 聖誕節海報</div>
+      </div>
+    </div>
+
+
     <div class="project-card" data-category="promotion" data-title="2023 科大財資系友會邀請卡">
       <img class="project-card-img" src="img/2023科大財資系友會邀請卡.jpg" alt="2023 科大財資系友會邀請卡" loading="lazy">
       <div class="project-card-placeholder">2023 科大財資系友會邀請卡</div>
@@ -563,12 +585,14 @@
       </div>
     </div>
 
-    <div class="project-card" data-category="promotion" data-title="Asia 之友卡片">
-      <img class="project-card-img" src="img/Asia之友卡片.jpg" alt="Asia 之友卡片" loading="lazy">
-      <div class="project-card-placeholder">Asia 之友卡片</div>
+
+
+    <div class="project-card" data-category="promotion" data-title="揪愛跟風">
+      <img class="project-card-img" src="img/揪愛跟風.jpg" alt="揪愛跟風" loading="lazy">
+      <div class="project-card-placeholder">揪愛跟風</div>
       <div class="project-card-overlay">
         <div class="project-card-cat">活動 · 宣傳</div>
-        <div class="project-card-name">Asia 之友卡片</div>
+        <div class="project-card-name">揪愛跟風</div>
       </div>
     </div>
 
@@ -581,16 +605,99 @@
       </div>
     </div>
 
-    <!-- ── 慶典 · 祝賀 ── -->
 
-    <div class="project-card" data-category="celebration" data-title="2018 聖誕節海報">
-      <img class="project-card-img" src="img/2018聖誕節海報.jpg" alt="2018 聖誕節海報" loading="lazy">
-      <div class="project-card-placeholder">2018 聖誕節海報</div>
+
+
+  <!-- ── 品牌 · 包裝 ── -->
+
+    <div class="project-card" data-category="brand" data-title="BellaQ 包裝設計">
+      <img class="project-card-img" src="img/BellaQ包裝設計.jpg" alt="BellaQ 包裝設計" loading="lazy">
+      <div class="project-card-placeholder">BellaQ 包裝設計</div>
       <div class="project-card-overlay">
-        <div class="project-card-cat">慶典 · 祝賀</div>
-        <div class="project-card-name">2018 聖誕節海報</div>
+        <div class="project-card-cat">品牌 · 包裝</div>
+        <div class="project-card-name">BellaQ 包裝設計</div>
       </div>
     </div>
+
+    <div class="project-card" data-category="brand" data-title="2021 君衡面膜">
+      <img class="project-card-img" src="img/2021君衡面膜.jpg" alt="2021 君衡面膜" loading="lazy">
+      <div class="project-card-placeholder">2021 君衡面膜</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">品牌 · 包裝</div>
+        <div class="project-card-name">2021 君衡面膜</div>
+      </div>
+    </div>
+
+
+
+    <div class="project-card" data-category="brand" data-title="Narwhalbe 名片">
+      <img class="project-card-img" src="img/Narwhalbe名片.jpg" alt="Narwhalbe 名片" loading="lazy">
+      <div class="project-card-placeholder">Narwhalbe 名片</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">品牌 · 包裝</div>
+        <div class="project-card-name">Narwhalbe 名片</div>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="brand" data-title="空間大數據名片">
+      <img class="project-card-img" src="img/空間大數據名片.jpg" alt="空間大數據名片" loading="lazy">
+      <div class="project-card-placeholder">空間大數據名片</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">品牌 · 包裝</div>
+        <div class="project-card-name">空間大數據名片</div>
+      </div>
+    </div>
+
+
+    <div class="project-card" data-category="brand" data-title="Asia 之友卡片">
+      <img class="project-card-img" src="img/Asia之友卡片.jpg" alt="Asia 之友卡片" loading="lazy">
+      <div class="project-card-placeholder">Asia 之友卡片</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">品牌 · 包裝</div>
+        <div class="project-card-name">Asia 之友卡片</div>
+      </div>
+    </div>
+
+    <!-- ── 出版 · 排版 ── -->
+
+    <div class="project-card" data-category="publication" data-title="亞洲復興誌 第43期">
+      <img class="project-card-img" src="img/43亞洲復興誌.jpg" alt="亞洲復興誌 第43期" loading="lazy">
+      <div class="project-card-placeholder">亞洲復興誌 第43期</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">出版 · 排版</div>
+        <div class="project-card-name">亞洲復興誌 第43期</div>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="publication" data-title="2019 亞洲復興誌">
+      <img class="project-card-img" src="img/2019亞洲復興誌.jpg" alt="2019 亞洲復興誌" loading="lazy">
+      <div class="project-card-placeholder">2019 亞洲復興誌</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">出版 · 排版</div>
+        <div class="project-card-name">2019 亞洲復興誌</div>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="publication" data-title="占星術殺人事件封面">
+      <img class="project-card-img" src="img/占星術殺人事件封面.jpg" alt="占星術殺人事件封面" loading="lazy">
+      <div class="project-card-placeholder">占星術殺人事件封面</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">出版 · 排版</div>
+        <div class="project-card-name">占星術殺人事件封面</div>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="publication" data-title="無名毒書封練習">
+      <img class="project-card-img" src="img/無名毒書封練習.jpg" alt="無名毒書封練習" loading="lazy">
+      <div class="project-card-placeholder">無名毒書封練習</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">出版 · 排版</div>
+        <div class="project-card-name">無名毒書封練習</div>
+      </div>
+    </div>
+
+
+    <!-- ── 慶典 · 祝賀 ── -->
 
     <div class="project-card" data-category="celebration" data-title="2025 心設計新年賀卡">
       <img class="project-card-img" src="img/2025心設計新年賀卡.jpg" alt="2025 心設計新年賀卡" loading="lazy">
@@ -646,97 +753,18 @@
       </div>
     </div>
 
-    <!-- ── 品牌 · 包裝 ── -->
+  
 
-    <div class="project-card" data-category="brand" data-title="BellaQ 包裝設計">
-      <img class="project-card-img" src="img/BellaQ包裝設計.jpg" alt="BellaQ 包裝設計" loading="lazy">
-      <div class="project-card-placeholder">BellaQ 包裝設計</div>
+
+    <!-- ── 數位 · 影片 ── -->
+    <div class="project-card is-video" data-category="video" data-title="VML Human First 形象影片" data-video="video/VML_human-First.mp4">
+      <video class="project-card-img" muted loop playsinline preload="metadata" style="pointer-events:none;">
+        <source src="video/VML_human-First.mp4" type="video/mp4">
+      </video>
+      <div class="video-play-btn"></div>
       <div class="project-card-overlay">
-        <div class="project-card-cat">品牌 · 包裝</div>
-        <div class="project-card-name">BellaQ 包裝設計</div>
-      </div>
-    </div>
-
-    <div class="project-card" data-category="brand" data-title="2021 君衡面膜">
-      <img class="project-card-img" src="img/2021君衡面膜.jpg" alt="2021 君衡面膜" loading="lazy">
-      <div class="project-card-placeholder">2021 君衡面膜</div>
-      <div class="project-card-overlay">
-        <div class="project-card-cat">品牌 · 包裝</div>
-        <div class="project-card-name">2021 君衡面膜</div>
-      </div>
-    </div>
-
-    <div class="project-card" data-category="brand" data-title="慾望當舖酷卡">
-      <img class="project-card-img" src="img/慾望當舖酷卡.jpg" alt="慾望當舖酷卡" loading="lazy">
-      <div class="project-card-placeholder">慾望當舖酷卡</div>
-      <div class="project-card-overlay">
-        <div class="project-card-cat">品牌 · 包裝</div>
-        <div class="project-card-name">慾望當舖酷卡</div>
-      </div>
-    </div>
-
-    <div class="project-card" data-category="brand" data-title="揪愛跟風">
-      <img class="project-card-img" src="img/揪愛跟風.jpg" alt="揪愛跟風" loading="lazy">
-      <div class="project-card-placeholder">揪愛跟風</div>
-      <div class="project-card-overlay">
-        <div class="project-card-cat">品牌 · 包裝</div>
-        <div class="project-card-name">揪愛跟風</div>
-      </div>
-    </div>
-
-    <div class="project-card" data-category="brand" data-title="Narwhalbe 名片">
-      <img class="project-card-img" src="img/Narwhalbe名片.jpg" alt="Narwhalbe 名片" loading="lazy">
-      <div class="project-card-placeholder">Narwhalbe 名片</div>
-      <div class="project-card-overlay">
-        <div class="project-card-cat">品牌 · 包裝</div>
-        <div class="project-card-name">Narwhalbe 名片</div>
-      </div>
-    </div>
-
-    <div class="project-card" data-category="brand" data-title="空間大數據名片">
-      <img class="project-card-img" src="img/空間大數據名片.jpg" alt="空間大數據名片" loading="lazy">
-      <div class="project-card-placeholder">空間大數據名片</div>
-      <div class="project-card-overlay">
-        <div class="project-card-cat">品牌 · 包裝</div>
-        <div class="project-card-name">空間大數據名片</div>
-      </div>
-    </div>
-
-    <!-- ── 出版 · 排版 ── -->
-
-    <div class="project-card" data-category="publication" data-title="亞洲復興誌 第43期">
-      <img class="project-card-img" src="img/43亞洲復興誌.jpg" alt="亞洲復興誌 第43期" loading="lazy">
-      <div class="project-card-placeholder">亞洲復興誌 第43期</div>
-      <div class="project-card-overlay">
-        <div class="project-card-cat">出版 · 排版</div>
-        <div class="project-card-name">亞洲復興誌 第43期</div>
-      </div>
-    </div>
-
-    <div class="project-card" data-category="publication" data-title="2019 亞洲復興誌">
-      <img class="project-card-img" src="img/2019亞洲復興誌.jpg" alt="2019 亞洲復興誌" loading="lazy">
-      <div class="project-card-placeholder">2019 亞洲復興誌</div>
-      <div class="project-card-overlay">
-        <div class="project-card-cat">出版 · 排版</div>
-        <div class="project-card-name">2019 亞洲復興誌</div>
-      </div>
-    </div>
-
-    <div class="project-card" data-category="publication" data-title="占星術殺人事件封面">
-      <img class="project-card-img" src="img/占星術殺人事件封面.jpg" alt="占星術殺人事件封面" loading="lazy">
-      <div class="project-card-placeholder">占星術殺人事件封面</div>
-      <div class="project-card-overlay">
-        <div class="project-card-cat">出版 · 排版</div>
-        <div class="project-card-name">占星術殺人事件封面</div>
-      </div>
-    </div>
-
-    <div class="project-card" data-category="publication" data-title="無名毒書封練習">
-      <img class="project-card-img" src="img/無名毒書封練習.jpg" alt="無名毒書封練習" loading="lazy">
-      <div class="project-card-placeholder">無名毒書封練習</div>
-      <div class="project-card-overlay">
-        <div class="project-card-cat">出版 · 排版</div>
-        <div class="project-card-name">無名毒書封練習</div>
+        <div class="project-card-cat">數位 · 影片</div>
+        <div class="project-card-name">VML Human First 形象影片</div>
       </div>
     </div>
 
@@ -766,7 +794,7 @@
     </div>
     <div class="about-right">
       <div class="about-bio">
-        <p>「心設計」成立於 2018 年，致力於以溫暖而細膩的設計語言，為客戶傳遞獨特的品牌形象與設計美學。從喜帖、賀卡到品牌包裝，每一件作品都注入了對設計的熱情與對細節的堅持。</p>
+        <p>「心設計」成立於 2025 年，致力於以溫暖而細膩的設計語言，為客戶傳遞獨特的品牌形象與設計美學。從喜帖、賀卡到品牌包裝，每一件作品都注入了對設計的熱情與對細節的堅持。</p>
         <p>多年來服務過各類客戶，作品涵蓋文化、教育、商業等領域，擅長將客戶的理念轉化為具有視覺張力的設計成果。近年更跨足數位設計，參與 YSL、Ford 等品牌的網頁視覺製作。相信好的設計，不只是美觀，更能打動人心。</p>
       </div>
       <p class="skills-eyebrow">Tools & Skills</p>
