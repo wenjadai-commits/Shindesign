@@ -208,6 +208,11 @@
 
     /* ── GRID ── */
     .project-grid { columns:3; column-gap:14px; }
+    /* 社群貼文篩選時切換為 5 欄，讓 1:1 方形卡片比例正常 */
+    .project-grid.social-view { columns:4; column-gap:10px; max-width: 1920px; margin:0px auto;}
+    @media (max-width:1200px) { .project-grid.social-view { columns:4; } }
+    @media (max-width:900px)  { .project-grid.social-view { columns:3; } }
+    @media (max-width:540px)  { .project-grid.social-view { columns:2; } }
     .project-card {
       break-inside:avoid; margin-bottom:14px;
       position:relative; overflow:hidden; cursor:pointer;
@@ -226,6 +231,7 @@
     .project-card[data-category="web"]          { --ph-bg: linear-gradient(145deg,#0e141e,#1a2235,#0e141e); }
     .project-card[data-category="illustration"] { --ph-bg: linear-gradient(145deg,#101a0e,#182618,#101a0e); }
     .project-card[data-category="experimental"] { --ph-bg: linear-gradient(145deg,#1e1020,#301530,#1e1020); }
+    .project-card[data-category="social"]       { --ph-bg: linear-gradient(145deg,#1a0e20,#2a1535,#1a0e20); }
 
     .img-error { display:none !important; }
     .img-error ~ .project-card-placeholder { display:flex !important; }
@@ -462,6 +468,7 @@
     <button class="filter-btn" data-filter="visual">Visual Design</button>
     <button class="filter-btn" data-filter="web">Web Design</button>
     <!--<button class="filter-btn" data-filter="illustration">Illustration</button>-->
+    <button class="filter-btn" data-filter="social">Social Media Post Design</button>
     <button class="filter-btn" data-filter="experimental">Experimental / AI</button>
   </div>
 
@@ -775,10 +782,112 @@
     </div>
 
 
+    <!-- ══ 社群貼文設計 ══ -->
+
+    <!-- Pay4U 春節系列 -->
+    <div class="project-card" data-category="social" data-title="Pay4U 春節習俗知多少 IG 系列 01">
+      <img class="project-card-img" src="img/social/pay4u_01.jpg" alt="Pay4U 春節 01" loading="lazy">
+      <div class="project-card-placeholder">Pay4U 春節 01</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">社群貼文 · Pay4U</div>
+        <div class="project-card-name">春節習俗知多少 IG 系列 01</div>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="social" data-title="Pay4U 春節習俗知多少 IG 系列 02">
+      <img class="project-card-img" src="img/social/pay4u_02.jpg" alt="Pay4U 春節 02" loading="lazy">
+      <div class="project-card-placeholder">Pay4U 春節 02</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">社群貼文 · Pay4U</div>
+        <div class="project-card-name">春節習俗知多少 IG 系列 02</div>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="social" data-title="Pay4U 春節習俗知多少 IG 系列 03">
+      <img class="project-card-img" src="img/social/pay4u_03.jpg" alt="Pay4U 春節 03" loading="lazy">
+      <div class="project-card-placeholder">Pay4U 春節 03</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">社群貼文 · Pay4U</div>
+        <div class="project-card-name">春節習俗知多少 IG 系列 03</div>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="social" data-title="Pay4U 春節習俗知多少 IG 系列 04">
+      <img class="project-card-img" src="img/social/pay4u_04.jpg" alt="Pay4U 春節 04" loading="lazy">
+      <div class="project-card-placeholder">Pay4U 春節 04</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">社群貼文 · Pay4U</div>
+        <div class="project-card-name">春節習俗知多少 IG 系列 04</div>
+      </div>
+    </div>
+
+    <!-- 中租系列 -->
+    <div class="project-card" data-category="social" data-title="中租 油價公告">
+      <img class="project-card-img" src="img/social/zhongzu_oil.jpg" alt="中租 油價公告" loading="lazy">
+      <div class="project-card-placeholder">中租 油價公告</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">社群貼文 · 中租</div>
+        <div class="project-card-name">油價公告</div>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="social" data-title="中租 互動貼文 測今年運勢 01">
+      <img class="project-card-img" src="img/social/zhongzu_luck01.png" alt="中租 運勢 01" loading="lazy">
+      <div class="project-card-placeholder">中租 測今年運勢 01</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">社群貼文 · 中租</div>
+        <div class="project-card-name">互動貼文 — 測今年運勢 01</div>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="social" data-title="中租 互動貼文 測今年運勢 02">
+      <img class="project-card-img" src="img/social/zhongzu_luck02.png" alt="中租 運勢 02" loading="lazy">
+      <div class="project-card-placeholder">中租 測今年運勢 02</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">社群貼文 · 中租</div>
+        <div class="project-card-name">互動貼文 — 測今年運勢 02</div>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="social" data-title="中租 互動貼文 測今年運勢 03">
+      <img class="project-card-img" src="img/social/zhongzu_luck03.png" alt="中租 運勢 03" loading="lazy">
+      <div class="project-card-placeholder">中租 測今年運勢 03</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">社群貼文 · 中租</div>
+        <div class="project-card-name">互動貼文 — 測今年運勢 03</div>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="social" data-title="中租 互動貼文 測今年運勢 04">
+      <img class="project-card-img" src="img/social/zhongzu_luck04.png" alt="中租 運勢 04" loading="lazy">
+      <div class="project-card-placeholder">中租 測今年運勢 04</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">社群貼文 · 中租</div>
+        <div class="project-card-name">互動貼文 — 測今年運勢 04</div>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="social" data-title="中租 共鳴議題 堅強的靠山">
+      <img class="project-card-img" src="img/social/zhongzu_support.jpg" alt="中租 堅強的靠山" loading="lazy">
+      <div class="project-card-placeholder">中租 堅強的靠山</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">社群貼文 · 中租</div>
+        <div class="project-card-name">共鳴議題 — 堅強的靠山</div>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="social" data-title="中租 救急找中租">
+      <img class="project-card-img" src="img/social/zhongzu_help.jpg" alt="中租 救急找中租" loading="lazy">
+      <div class="project-card-placeholder">中租 救急找中租</div>
+      <div class="project-card-overlay">
+        <div class="project-card-cat">社群貼文 · 中租</div>
+        <div class="project-card-name">救急找中租</div>
+      </div>
+    </div>
+
+
   </div>
 </section>
-
-<!-- ABOUT -->
 <section class="section" id="about">
   <div class="section-header">
     <div>
@@ -868,6 +977,18 @@ document.querySelectorAll('.project-card.is-video').forEach(card => {
 const filterBtns = document.querySelectorAll('.filter-btn');
 const allCards   = document.querySelectorAll('.project-card');
 const countEl    = document.getElementById('count');
+const gridEl     = document.getElementById('grid');
+
+// 頁面載入：All 預設隱藏 social 卡片
+(function initFilter() {
+  let n = 0;
+  allCards.forEach(card => {
+    const isSocial = card.dataset.category === 'social';
+    card.classList.toggle('hidden', isSocial);
+    if (!isSocial) n++;
+  });
+  countEl.textContent = n + ' Projects';
+})();
 
 filterBtns.forEach(btn => {
   btn.addEventListener('click', () => {
@@ -876,11 +997,17 @@ filterBtns.forEach(btn => {
     const f = btn.dataset.filter;
     let n = 0;
     allCards.forEach(card => {
-      const show = f === 'all' || card.dataset.category === f;
+      const show = f === 'social'
+        ? card.dataset.category === 'social'
+        : f === 'all'
+          ? card.dataset.category !== 'social'
+          : card.dataset.category === f;
       card.classList.toggle('hidden', !show);
       if (show) n++;
     });
     countEl.textContent = n + ' Projects';
+    // 社群貼文切換為緊湊 5 欄 grid
+    gridEl.classList.toggle('social-view', f === 'social');
   });
 });
 
