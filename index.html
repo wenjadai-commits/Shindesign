@@ -418,6 +418,30 @@
       .about-grid { grid-template-columns:1fr; gap:40px; }
       .lightbox-prev { left:12px; } .lightbox-next { right:12px; }
       .hero-corner { display:none; }
+
+      /* Filter bar：換行顯示，不橫滾 */
+      .filter-bar {
+        flex-wrap: wrap;
+        border-bottom: none;
+        gap: 6px;
+        margin-bottom: 36px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--cream-faint);
+      }
+      .filter-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+        border: 1px solid rgba(232,238,245,.12);
+        border-bottom: 2px solid transparent;
+        border-radius: 2px;
+        letter-spacing: .04em;
+        white-space: nowrap;
+      }
+      .filter-btn.active {
+        border-color: var(--gold-dim);
+        border-bottom-color: var(--gold);
+        background: rgba(216,96,34,.06);
+      }
     }
     @media (max-width:540px) { .project-grid { columns:1; } }
   </style>
@@ -446,6 +470,8 @@
     <p class="hero-zh">心　設　計</p>
     <p class="hero-sub">Designing meaningful experiences through creativity and technology.</p>
     <p class="hero-intro">I create visual identities, digital experiences, illustrations, and experimental projects<br>that connect people with ideas, emotions, and stories.</p>
+
+    <p class="hero-intro">ビジュアルアイデンティティ、デジタル体験、イラストレーション、そして実験的な表現を通じて、人とアイデア、感情、そして物語をつなぐデザインを探求しています。</p>
   </div>
   <div class="hero-scroll">
     <span class="hero-scroll-label">Scroll</span>
@@ -916,6 +942,18 @@
         <p>I'm a curiosity-driven creator working at the intersection of design, art, and emerging technology. My practice spans visual identities, digital experiences, illustration, and experimental projects — always with people and their inner worlds at the centre.</p>
         <p>I believe design is more than aesthetics. It's a language that can hold emotion, build trust, and open up space for people to feel something real. Whether I'm crafting a brand identity, building a digital wellness app, or developing an immersive installation, the question I keep returning to is: <em>how does this make someone feel?</em></p>
         <p>Clients have included YSL, Ford, and VML. Personal work explores the boundary between technology and the human experience — including two mental wellness PWA applications and an ongoing illustration practice under the name Black Mori.</p>
+
+        <p>私は、デザイン・アート・テクノロジーが交差する領域で、人の感情や体験に寄り添うクリエイティブを探求しています。<br/>
+
+ビジュアルアイデンティティ、デジタル体験、イラストレーション、実験的なプロジェクトなど、分野を横断しながら制作を行っています。<br/>
+
+私にとってデザインとは、美しさを形にすることだけではなく、人の感情を動かし、信頼を育み、新しい体験を生み出すためのコミュニケーションです。<br/>
+
+ブランドデザインからデジタルウェルネスアプリ、インスタレーションまで、一貫して問い続けているのは、
+
+「この体験は、人に何を感じてもらえるだろうか。」<br/>
+
+これまでに YSL、Ford、VML などのプロジェクトに携わる一方で、個人ではテクノロジーと人間性の関係をテーマに、メンタルウェルネスPWAの開発や「Black Mori」としてイラストレーション制作を続けています。</p>
       </div>
       <div style="margin-top:40px; display:flex; gap:12px; flex-wrap:wrap;">
         <span class="skill-tag">Visual Design</span>
